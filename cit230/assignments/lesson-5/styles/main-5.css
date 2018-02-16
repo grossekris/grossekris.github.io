@@ -1,10 +1,13 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* {box-sizing: border-box}  /* This wildcard applies to all elements ensuring a box layout model */
+* { -webkit-box-sizing: border-box;
+    -mozbox-box-sizing: border-box;
+            box-sizing: border-box}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
+  font-family: 'EB Garamond', serif;
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -14,8 +17,8 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {}
 header h1 {}
 header img {float:left;
-            margin: 0 1 1em 1em;}
-.clearfix{ overflow: auto;}
+            width: 25%;
+            margin: 0 0 0 2%;}
 header .subheading {}
 
 nav {display: none;}
@@ -36,16 +39,17 @@ main {
     margin: 0 auto;
 }
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img {float:left;
-            margin: 1 1 1em 1em;}
+main figure img{ margin: 0 0 0 2%; width:50%;}
+
 section {}
 section img {float:left;
-            margin: 0 1 1em 1em;}
+            margin: 0 0 0 2%;
+            width: 25%;}
 section.forecast {display: none;}
 
 article p.town-article img {float:right;
-                            margin: 0 1 1em 1em;}
+                            margin: 0 1 1em 1em;
+                            width: 50%;}
 
 footer {}
 footer aside {}
